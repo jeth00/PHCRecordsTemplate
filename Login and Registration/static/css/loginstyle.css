@@ -271,10 +271,9 @@ a:hover{
 	}
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1300px){
 	.container{
 		grid-template-columns: 1fr;
-		margin-top: -50px;
 	}
 
 	.img{
