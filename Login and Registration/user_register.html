@@ -7,6 +7,7 @@
   <title>Registration Form</title>
   <link rel="stylesheet" href="static/css/registerstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="static/js/userregister.js"></script>
 </head>
 <body>
 
@@ -21,34 +22,34 @@
       <li class="nav-item"><a class="nav-link register" href="user_login.html">Login</a></li>
     </ul>
   </nav>
-  
+
   <div class="container">
     <div class="title">User Registration Form</div>
-    <form action="#">
+    <form id="registrationForm" action="#">
       <div class="user-details">
         <div class="input-box">
           <label for="first_name" class="details">First Name</label>
-          <input type="text" placeholder="Ilagay ang iyong unang pangalan" required id="firstname">
+          <input type="text" placeholder="Enter your first name" required id="firstname">
         </div>
         <div class="input-box">
           <label for="last_name" class="details">Last Name</label>
-          <input type="text" placeholder="Ilagay ang iyong apelyido" required id="lastname">
-        </div>
-        <div class="input-box">
-          <label for="username" class="details">Username</label>
-          <input type="text" placeholder="Ilagay ang iyong username" required id="username">
+          <input type="text" placeholder="Enter your last name" required id="lastname">
         </div>
         <div class="input-box">
           <label for="birthdate" class="details">Birthdate</label>
           <input type="date" required id="birthdate">
         </div>
         <div class="input-box">
+          <label for="username" class="details">Username</label>
+          <input type="text" placeholder="Your username will be autofilled" required id="username" readonly>
+        </div>
+        <div class="input-box">
           <label for="pwd" class="details">Password</label>
-          <input type="password" placeholder="Ilagay ang iyong password" required id="pwd" minlength="5">
+          <input type="password" placeholder="Enter your password" required id="pwd" minlength="5">
         </div>
         <div class="input-box">
           <label for="cpwd" class="details">Confirm Password</label>
-          <input type="password" placeholder="Ilagay ulit ang iyong password" required id="cpwd" minlength="5">
+          <input type="password" placeholder="Confirm your password" required id="cpwd" minlength="5">
         </div>
         <div class="sex-box">
           <label for="sex" class="details">Sex</label>
@@ -63,6 +64,7 @@
       </div>
     </form>
   </div>
-
-</body>
-</html>
+  
+  </body>
+  </html>
+  
