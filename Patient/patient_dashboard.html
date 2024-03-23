@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paltoc Healthcare Center</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet"  href="patient_dashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+		<div class="navbar-brand">
+		  <img src="/Login and Registration/static/images/mhd.png" alt="Logo 1">
+		  <img src="/Login and Registration/static/images/maynila.png" alt="Logo 2">
+		  <h1>Paltoc HealthCare Center</h1>
+		</div>
+		<ul class="navbar-nav">
+		  <li class="nav-item"><a class="nav-link staff" href="#"><i class="fa-solid fa-user-doctor"></i> User <i class="fa-solid fa-chevron-right"></i> </a></li>
+		  <li class="nav-item"><a class="nav-link logout" href="#">Logout</a></li>
+		</ul>
+	</nav>
+
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo_name">Patient</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav-list">
+			<li>
+				<a href="#" onclick="loadPage('./patient_profile.html')">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Profile</span>
+				</a>
+				<span class="tooltip">Profile</span>
+			</li>
+	
+			<li>
+				<a href="#" onclick="loadPage('./patient.html')">
+					<i class='bx bx-file'></i>
+					<span class="links_name">Record</span>
+				</a>
+				<span class="tooltip">Record</span>
+			</li>
+	
+			
+	
+			
+		</ul>
+	</div>
+	
+	<div id="pageContent"></div>
+	
+	  
+	<script src="patient_dashboard.js"></script>
+
+	
+
+    
+   
+    
+
+</body>
+</html>

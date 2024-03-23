@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paltoc Healthcare Center</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet"  href="staff_dashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+		<div class="navbar-brand">
+		  <img src="/Login and Registration/static/images/mhd.png" alt="Logo 1">
+		  <img src="/Login and Registration/static/images/maynila.png" alt="Logo 2">
+		  <h1>Paltoc HealthCare Center</h1>
+		</div>
+		<ul class="navbar-nav">
+		  <li class="nav-item"><a class="nav-link staff" href="#"><i class="fa-solid fa-user-doctor"></i>Doctor!<i class="fa-solid fa-chevron-right"></i> </a></li>
+		  <li class="nav-item"><a class="nav-link logout" href="#">Logout</a></li>
+		</ul>
+	</nav>
+
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo_name">Staff</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav-list">
+			<li>
+				<a href="#" onclick="loadPage('dashboard.html')">
+					<i class='bx bx-grid-alt'></i>
+					<span class="links_name">Dashboard</span>
+				</a>
+				<span class="tooltip">Dashboard</span>
+			</li>
+
+			<li>
+				<a href="#" onclick="loadPage('./unverified-forms.html')">
+					<i class='bx bx-edit'></i>
+					<span class="links_name">Unverified Forms</span>
+				</a>
+				<span class="tooltip">Unverified Forms</span>
+			</li>
+	
+			<li>
+				<a href="#" onclick="loadPage('./patients.html')">
+					<i class='bx bx-user'></i>
+					<span class="links_name">Patients</span>
+				</a>
+				<span class="tooltip">Patients</span>
+			</li>
+	
+			<li>
+				<a href="#" onclick="loadPage('./forms.html')">
+					<i class='bx bx-file'></i>
+					<span class="links_name">Forms</span>
+				</a>
+				<span class="tooltip">Forms</span>
+			</li>
+	
+			<li>
+				<a href="#" onclick="loadPage('./learn-more.html')">
+					<i class='bx bx-info-circle'></i>
+					<span class="links_name">Learn More</span>
+				</a>
+				<span class="tooltip">Learn More</span>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="pageContent"></div>
+	
+	  
+	  <script src="staff_dashboard.js"></script>
+
+	
+
+    
+   
+    
+
+</body>
+</html>

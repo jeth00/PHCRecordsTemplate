@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: #24344B;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid white; 
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 20px; 
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-link.home {
+    background-color: #2980b9;
+}
+
+.nav-link.login {
+    background-color: #2ecc71;
+}
+
+.nav-link.home:hover {
+    background-color: #1c5a7f; 
+    color: #fff; 
+}
+  
+.nav-link.login:hover {
+    background-color: #2aa259; 
+    color: #fff; 
+}
+
+/* Media query for hiding h1 element on smaller screens */
+@media screen and (max-width: 600px) {
+    .navbar-brand h1 {
+        display: none; /* Hide the h1 element */
+    }
+    
+    .nav-item {
+        margin-left: 10px; /* Adjusted margin between nav items */
+    }
+
+    .nav-link {
+        padding: 8px 16px; /* Adjusted button padding */
+        font-size: 14px; /* Adjusted button font size */
+    }
+}
